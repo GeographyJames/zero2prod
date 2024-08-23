@@ -12,9 +12,11 @@ name = "zero2prod"
 
 [dependencies]
 actix-web = "4.9.0"
+chrono = { version = "0.4.38", default-features = false, features = ["clock"] }
 config = "0.14.0"
 serde = { version = "1.0.208", features = ["derive"] }
 tokio = {version = "1", features = ["macros", "rt-multi-thread"] }
+uuid = { version = "1.10.0", features = ["v4"] }
 
 [dev-dependencies]
 reqwest = "0.12.7"
@@ -28,4 +30,5 @@ features = [
 "postgres",
 "uuid",
 "chrono",
+"migrate",
 ]
