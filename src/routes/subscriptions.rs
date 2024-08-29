@@ -3,7 +3,6 @@ use chrono::Utc;
 use sqlx::PgPool;
 use uuid::Uuid;
 
-#[allow(dead_code)]
 #[derive(serde::Deserialize)]
 pub struct FormData {
     email: String,
