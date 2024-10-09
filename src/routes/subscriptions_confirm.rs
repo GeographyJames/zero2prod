@@ -2,7 +2,7 @@ use actix_web::{web, HttpResponse};
 
 #[derive(serde::Deserialize)]
 pub struct Parameters {
-    _subscription_token: String,
+    subscription_token: String,
 }
 
 #[tracing::instrument(name = "Confirm a pending subscriber", skip(_parameters))]
