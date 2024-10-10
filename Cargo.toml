@@ -16,6 +16,7 @@ chrono = { version = "0.4.38", default-features = false, features = ["clock"] }
 config = "0.14.0"
 env_logger = "0.11.5"
 once_cell = "1.19.0"
+rand = "0.8.5"
 secrecy = { version = "0.8.0", features = ["serde"] }
 serde = { version = "1.0.208", features = ["derive"] }
 serde-aux = "4.5.0"
@@ -33,13 +34,13 @@ uuid = { version = "1.10.0", features = ["v4"] }
 validator = "0.16"
 
 [dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt"] }
 serde_json = "1"
+rand = { version = "0.8.5", features = ["std_rng"] }
 claims = "0.7.1"
 fake = "2.9.2"
 quickcheck = "1.0.3"
 quickcheck_macros = "1.0.0"
-rand = "0.8.5"
-tokio = { version = "1", features = ["macros", "rt"] }
 wiremock = "0.6"
 linkify = "0.10.0"
 
