@@ -60,6 +60,6 @@ async fn clicking_on_confirmation_link_confirms_a_subscriber() {
         .expect("Failed to fetch saved subscription");
 
     assert_eq!(saved.email, "james.e.campbell@outlook.com");
-    assert_eq!(saved.name, "James Campbell");
+    assert_eq!(saved.name, "james campbell");
     assert_eq!(saved.status, "confirmed");
 }
