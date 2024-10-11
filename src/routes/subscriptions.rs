@@ -1,3 +1,5 @@
+#![allow(unused_variables)]
+
 use actix_web::{web, HttpResponse};
 use chrono::Utc;
 use rand::{distributions::Alphanumeric, thread_rng, Rng};
